@@ -1,0 +1,9 @@
+spring:
+  application:
+    name:Store
+gpay:
+  apiUrl : https://pay.google.com/about/
+  enabled : true
+  timeout : 1000
+  supportedCurrencies : INR, USD
+
