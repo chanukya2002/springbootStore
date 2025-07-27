@@ -1,9 +1,18 @@
 spring:
   application:
     name:Store
+  datasource:
+    url: jdbc:mysql://localhost:3306/store?createDatabaseIfNotExist=true
+    username: root
+    password: 1408
 gpay:
   apiUrl : https://pay.google.com/about/
   enabled : true
   timeout : 1000
-  supportedCurrencies : INR, USD
+  supportedCurrencies : INR, USD+
+payment:
+  gateway : paypal
+mail:
+  host: https://smtp.gmail.com
+  port: 5761
 
